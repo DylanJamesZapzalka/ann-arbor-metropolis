@@ -1,0 +1,45 @@
+% UofM Ann Arbor Metropolis Theme
+
+% Packages
+\usepackage{caption}
+\usepackage{xcolor}
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+% UofM Ann Arbor colors
+% https://brand.umich.edu/design-resources/colors/
+\definecolor{uni-blue}{HTML}{00274C}
+\definecolor{maize}{HTML}{FFCB05}
+\definecolor{puma-black}{HTML}{131516}
+\definecolor{angell-hall-ash}{HTML}{989C97}
+\definecolor{white}{HTML}{FFFFFF}
+
+% UofM Ann Arbor logo on title slide
+% https://brand.umich.edu/logos/
+%\titlegraphic{\hfill\includegraphics[height=1.5cm]{U-M_Logo.png}}
+
+% Slide colors
+\setbeamercolor{palette primary}{fg=white, bg=uni-blue}
+\setbeamercolor{normal text}{fg=puma-black}
+\setbeamercolor{alerted text}{fg=maize}
+\setbeamercolor{example text}{fg=maize}
+\setbeamercolor{bibliography entry location}{fg=maize, bg=uni-blue}
+\setbeamercolor{progress bar}{fg=maize, bg=uni-blue}
+
+% Other colors
+\setbeamercolor{button}{bg=uni-blue,fg=maize}
+
+% Filled block colors
+\makeatletter
+\renewcommand{\metropolis@block@fill}{
+\setbeamercolor{block title}{fg=maize, bg=uni-blue}
+\setbeamercolor{block body}{bg=uni-blue!10!white}
+}
+\makeatletter
+
+% Bar widths
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{1.2mm} % Width of bar on title slide
+\setlength{\metropolis@progressonsectionpage@linewidth}{1mm} % Width of progress bar on section title slide
+\setlength{\metropolis@progressinheadfoot@linewidth}{1mm} % Width of progress bar on normal slides
+\makeatother
